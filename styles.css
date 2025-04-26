@@ -1,0 +1,60 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #d8d16c;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#daneSprzetu {
+  list-style: none;
+  padding: 0;
+}
+
+#daneSprzetu li {
+  padding: 15px 20px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: #050504;
+  display: flex;
+  align-items: center;
+}
+
+#daneSprzetu li:last-child {
+  margin-bottom: 0;
+}
+
+#daneSprzetu li::before {
+  content: ""; 
+  width: 0.5em; 
+}
+
+#daneSprzetu li span:first-child { 
+  font-weight: bold;
+  color: #555;
+  margin-right: 0.8em; 
+}
+
+#daneSprzetu li span:first-child::after {
+  content: " - "; 
+  color: #aaa;
+  margin-left: 0.8em; 
+}
